@@ -8,7 +8,7 @@
 
 Concerning this line: `Device is:        Not in smartctl database [for details use: -P showall]`
 
-See under `INFORMATION SECTION`. This disk model was not in [smartmontools drive db](https://www.smartmontools.org/browser/trunk/smartmontools/drivedb.h) at the time when this report was printed. Therefore it shows *Unknown_SSD_Attribute* and *Unknown_Attribute* in some lines of the `SMART Attributes Data Structure`.
+See under `INFORMATION SECTION`. This disk model was not in [smartmontools drive db](https://github.com/smartmontools/smartmontools/blob/main/smartmontools/drivedb.h) at the time when this report was printed. Therefore it shows *Unknown_SSD_Attribute* and *Unknown_Attribute* in some lines of the `SMART Attributes Data Structure`.
 See the following section of our FAQ for [more details and an instruction on how you can get a disk added to the database](faq.md#MyATASATAdriveisnotinthesmartctlsmartddatabase).
 
 ### Output <a id="Output"></a>

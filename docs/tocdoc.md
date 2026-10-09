@@ -96,7 +96,7 @@ IBM disks (at least some of them) have three temperatures stored in the raw stru
 Bruce Allen said on [smartmontools-support list](https://sourceforge.net/p/smartmontools/mailman/message/10782139/) (2007-08-31): *The raw values for certain Attributes have vendor-specific meanings and are hard to interpret unless you know exactly how the vendor uses them on that specific disk model. The bit pattern might be a mix of flags, counters, and bitmasks, for example, leading to large and strange numbers. I wouldn't worry about the raw values very much. The normalized values (VALUE/WORST/THRESH) should have a sensible interpretation.*
 
 Nevertheless smartmontools have a new EXPERIMENTAL feature to log *Attributes Raw Data*
-in external files. See option [--attributelog](https://www.smartmontools.org/browser/trunk/smartmontools/smartd.8.in#lbAE)
+in external files. See option [--attributelog](https://github.com/smartmontools/smartmontools/blob/main/smartmontools/smartd.8.in#lbAE)
 in smartd manpage and read the [authors instructions](attributelog.md).
 
 Franc Zabkar has a special interest in deciphering raw values. Read [some of his elaborated postings](raw-values.md) on smartmontools-support mailing list.

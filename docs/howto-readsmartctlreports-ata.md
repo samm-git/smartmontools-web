@@ -27,7 +27,7 @@ SMART overall-health self-assessment test result: <b><a href="#SMART_Status" tit
 General SMART Values:
 Offline data collection status:  (0x82)	Offline data collection activity
 					was completed without error.
-					Auto Offline Data Collection: <b><a href="https://www.smartmontools.org/browser/trunk/smartmontools/smartctl.8.in#lbAG" title="Offline testing is to be carried out, automatically, on a regular scheduled basis. 'smartctl --offlineauto=on' enables it. The results of this automatic or immediate offline testing (data collection) are reflected in the values of the SMART Attributes. Some SMART attribute values are updated /only/ during off-line data collection activities. These Attributes are labeled /Offline/ in the UPDATED column of the Attribute Table (see below)."><font color="DarkGreen">Enabled</font></a></b>.
+					Auto Offline Data Collection: <b><a href="https://github.com/smartmontools/smartmontools/blob/main/smartmontools/smartctl.8.in#lbAG" title="Offline testing is to be carried out, automatically, on a regular scheduled basis. 'smartctl --offlineauto=on' enables it. The results of this automatic or immediate offline testing (data collection) are reflected in the values of the SMART Attributes. Some SMART attribute values are updated /only/ during off-line data collection activities. These Attributes are labeled /Offline/ in the UPDATED column of the Attribute Table (see below)."><font color="DarkGreen">Enabled</font></a></b>.
 Self-test execution status:      (   0)	The previous self-test routine completed
 					without error or no self-test has ever 
 					been run.

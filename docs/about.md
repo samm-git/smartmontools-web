@@ -67,7 +67,7 @@ and the [feature list](https://gsmartcontrol.sourceforge.io/home/index.php/About
 
 #### Device Information <a id="DeviceInformation"></a>
 
-If your drive is not in the [current version of smartmontools drive database](https://www.smartmontools.org/browser/src/drivedb.h), you can help to add this information.
+If your drive is not in the [current version of smartmontools drive database](https://github.com/smartmontools/smartmontools/blob/main/src/drivedb.h), you can help to add this information.
 See the [FAQ](faq.md#MyATASATAdriveisnotinthesmartctlsmartddatabase) for details.
 
 We collect info about [USB devices that have been successfully or unsuccessfully tested with smartmontools](supported-usb-devices.md). If you have a device not listed there, please tell us the test result by editing the wiki page.

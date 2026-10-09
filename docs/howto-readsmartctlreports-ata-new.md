@@ -5,7 +5,7 @@ Move the mouse to the coloured parts of the text below to see a short explanatio
 
 ### The Report <a id="TheReport"></a>
 <pre>
-<b># smartctl <a href="https://www.smartmontools.org/browser/trunk/smartmontools/smartctl.8.in#lbAG" title="With this option, the report will not list the /Serial Number/ of the device. Use it, when you present smartctl reports in the public."><font color="blue">-q noserial</font></a> -a /dev/ada30</b>
+<b># smartctl <a href="https://github.com/smartmontools/smartmontools/blob/main/smartmontools/smartctl.8.in#lbAG" title="With this option, the report will not list the /Serial Number/ of the device. Use it, when you present smartctl reports in the public."><font color="blue">-q noserial</font></a> -a /dev/ada30</b>
 smartctl <b><a href="faq.md#Whydidthereleaseversionschemechange" title="This is the /Version Number/ of smartmontools"><font color="red">5.42</font></a></b> 2011-10-20 <b><a href="https://github.com/smartmontools/smartmontools/blob/3458/smartmontools" title="This is the /Revision Number/ of the sources in our SVN-Repository. So we know the exact version of each file, that was used to build your smartctl executable."><font color="red">r3458</font></a></b> [FreeBSD 9.0-RELEASE-p4 amd64] (local build)
 Copyright (C) 2002-11 by Bruce Allen, http://smartmontools.sourceforge.net
 
@@ -29,7 +29,7 @@ SMART overall-health self-assessment test result: <b><a href="#SMART_Status" tit
 General SMART Values:
 Offline data collection status:  (0x84)	Offline data collection activity
 					was suspended by an interrupting command from host.
-					Auto Offline Data Collection: <b><a href="https://www.smartmontools.org/browser/trunk/smartmontools/smartctl.8.in#lbAG" title="Offline testing is to be carried out, automatically, on a regular scheduled basis. 'smartctl --offlineauto=on' enables it. The results of this automatic or immediate offline testing (data collection) are reflected in the values of the SMART Attributes. Some SMART attribute values are updated /only/ during off-line data collection activities. These Attributes are labeled /Offline/ in the UPDATED column of the Attribute Table (see below)."><font color="DarkGreen">Enabled</font></a></b>.
+					Auto Offline Data Collection: <b><a href="https://github.com/smartmontools/smartmontools/blob/main/smartmontools/smartctl.8.in#lbAG" title="Offline testing is to be carried out, automatically, on a regular scheduled basis. 'smartctl --offlineauto=on' enables it. The results of this automatic or immediate offline testing (data collection) are reflected in the values of the SMART Attributes. Some SMART attribute values are updated /only/ during off-line data collection activities. These Attributes are labeled /Offline/ in the UPDATED column of the Attribute Table (see below)."><font color="DarkGreen">Enabled</font></a></b>.
 Self-test execution status:      (   0)	The previous self-test routine completed
 					without error or no self-test has ever 
 					been run.

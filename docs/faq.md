@@ -216,7 +216,7 @@ ATACB, smartmontools will abort.
 ### Smartmontools for SCSI disks and tapes (TapeAlert) <a id="SmartmontoolsforSCSIdisksandtapesTapeAlert"></a>
 
 Smartmontools for SCSI disks and tapes (including medium changers) is
-discussed on a separate [page](https://www.smartmontools.org/browser/trunk/www/smartmontools_scsi.xml).
+discussed on a separate [page](https://github.com/smartmontools/smartmontools/blob/main/www/smartmontools_scsi.xml).
 ---
 
 ### Smartmontools for the NVMe devices <a id="SmartmontoolsfortheNVMedevices"></a>
@@ -244,7 +244,7 @@ the essential drive health monitoring/testing functionality of
 [update the drive database](download.md#Updatethedrivedatabase) first.
 Please do not submit a new drive for the database without checking to see if it
 is already in the current drive database
-([drivedb.h](https://www.smartmontools.org/browser/trunk/smartmontools/drivedb.h))
+([drivedb.h](https://github.com/smartmontools/smartmontools/blob/main/smartmontools/drivedb.h))
 file.'''
 
 **If your drive is not in the current database,**

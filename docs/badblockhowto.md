@@ -4,7 +4,7 @@ This article describes what actions might be taken when smartmontools detects a 
 
 Registered users may add their recipes to solve *Bad Block Issues* here. Please create a new section with an own header for your addition then.
 You may also update, improve or correct existing recipes. In both cases you should add a sentence to the [Changelog](#Changelog) section below in this article
-For quality assurance we will review the changes from time to time. Here the link to the [last reviewed version of this article](https://www.smartmontools.org/wiki/BadBlockHowto?version=26).
+For quality assurance we will review the changes from time to time. Here the link to the [last reviewed version of this article](badblockhowto.md).
 
 
 ## Introduction <a id="Introduction"></a>

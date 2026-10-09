@@ -21,7 +21,7 @@ controllers is highly dependent on both platform and controller type.
 | Adaptec SAS RAID controller  
 (devices supported by [aacraid](https://www.kernel.org/doc/Documentation/scsi/aacraid.txt) driver) | `-d aacraid,H,L,ID /dev/sdX`<sup>[14.](#14)</sup> | - | - | - | - | - | `-d aacraid,H,L,ID /dev/sdX`^[15.](#15) |
 
-See the notes below and the [INSTALL](https://www.smartmontools.org/browser/trunk/smartmontools/INSTALL)
+See the notes below and the [INSTALL](https://github.com/smartmontools/smartmontools/blob/main/smartmontools/INSTALL)
 file for information about kernel and driver requirements on your platform. Also consult 
 the [man pages](tocdoc.md#man-pages) for controller specific smartmontools options or
 directives.

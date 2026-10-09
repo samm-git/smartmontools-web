@@ -40,7 +40,7 @@ Due to [CodePlex shutdown](https://devblogs.microsoft.com/bharry/shutting-down-c
 [libsmartctl](https://github.com/allanliu/smartmontools) - Provides smartctl functionality as a static library.  
 
 [Smartmontools with security](https://sourceforge.net/p/xboxhdm2/smartmontools-sec/ci/master/tree/) - a fork of
-[smartmontools 6.2](https://www.smartmontools.org/browser/smartmontools@RELEASE_6_2) which adds
+[smartmontools 6.2](https://github.com/smartmontools/smartmontools/blob/RELEASE_6_2/smartmontools) which adds
 [ATA Security commands](https://www.xbmc4xbox.org.uk/forum/viewtopic.php?f=13&t=4125) to smartctl.  
 
 
@@ -53,7 +53,7 @@ Due to [CodePlex shutdown](https://devblogs.microsoft.com/bharry/shutting-down-c
 
 [Farm Check](https://github.com/gamestailer94/farm-check) - script and Docker image to detect potentially fraudulent Seagate hard drives.  
 
-[Pure Go SMART library](https://github.com/dswarbrick/smart) (Go, GPLv3) - includes [mkdrivedb](https://github.com/dswarbrick/smart/tree/master/cmd/mkdrivedb) tool to download smartmontools [drivedb.h](https://www.smartmontools.org/browser/trunk/smartmontools/drivedb.h) file and convert it to YAML.  
+[Pure Go SMART library](https://github.com/dswarbrick/smart) (Go, GPLv3) - includes [mkdrivedb](https://github.com/dswarbrick/smart/tree/master/cmd/mkdrivedb) tool to download smartmontools [drivedb.h](https://github.com/smartmontools/smartmontools/blob/main/smartmontools/drivedb.h) file and convert it to YAML.  
 
 [pySMART](https://pypi.org/project/pySMART/) - a simple Python wrapper for the smartctl component of smartmontools.  
 
