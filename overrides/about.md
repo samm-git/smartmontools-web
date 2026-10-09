@@ -1,26 +1,10 @@
-## News <a id="News"></a>
+# About smartmontools
 
-- `2025-06-01`: **We moved smartmontools from [SourceForge svn](https://sourceforge.net/p/smartmontools/code/HEAD/tree/trunk/) to [GitHub](https://github.com/smartmontools/smartmontools/tree/main).**
-- `2025-04-30`: **We released [version 7.5 of Smartmontools](https://github.com/smartmontools/smartmontools/releases/tag/RELEASE_7_5). See the [NEWS](https://github.com/smartmontools/smartmontools/blob/RELEASE_7_5/NEWS) file and the [ticket report](https://github.com/smartmontools/smartmontools/issues) to get a summary of the changes and new features.**
-- `2025-02-24`: **[Alexander Shaduri](https://shaduri.dev/) released [version 2.0.2 of GSmartControl](https://github.com/ashaduri/gsmartcontrol/releases/tag/v2.0.2) (a graphical user interface for smartctl).**
-- `2024-11-26`: [Alexander Shaduri](https://shaduri.dev/) released [version 2.0.1 of GSmartControl](https://github.com/ashaduri/gsmartcontrol/releases/tag/v2.0.1) (a graphical user interface for smartctl).
-- `2023-09-16`: The CI builds at [builds.smartmontools.org](https://builds.smartmontools.org) are now reproducible if the same [SOURCE_DATE_EPOCH](https://reproducible-builds.org/docs/source-date-epoch/), build recipes and toolchains are used.
-- `2023-08-01`: We released [version 7.4 of Smartmontools](https://sourceforge.net/projects/smartmontools/files/smartmontools/7.4/).
-- `2023-06-30`: CI builds ([builds.smartmontools.org](https://builds.smartmontools.org)) for macOS now support arm64 and x86_64 architectures, i386 requires build from source. This will also be the case for future release builds.
-- `2022-10-10`: **20th anniversary** of [smartmontools first release](https://github.com/smartmontools/smartmontools/commit/d901f4d73a21dfb234aa02746bd9157e99c049af) - see also [smartmontools history](history.md).
-- `2022-02-28`: We released [version 7.3 of Smartmontools](https://sourceforge.net/projects/smartmontools/files/smartmontools/7.3/).
-- `2022-02-04`: Alexander Shaduri released [version 1.1.4 of GSmartControl](https://github.com/ashaduri/gsmartcontrol/releases/tag/v1.1.4) (a graphical user interface for smartctl).
-- `2021-10-23`: **There is a security issue if `smartd` is used conjunction with GNU mailutils < 3.13. See ticket [#1535](https://github.com/smartmontools/trac-tickets-archive/issues/1312) for details and various possible fixes.**
-- `2020-12-30`: We released [version 7.2 of Smartmontools](https://sourceforge.net/projects/smartmontools/files/smartmontools/7.2/).
-- `2019-12-30`: We released [version 7.1 of Smartmontools](https://sourceforge.net/projects/smartmontools/files/smartmontools/7.1/).
-- `2018-12-30`: We released [version 7.0 of Smartmontools](https://sourceforge.net/projects/smartmontools/files/smartmontools/7.0/).
-- ...see [here for further news](news.md)
+![S.M.A.R.T. logo](assets/smart_logo.gif)
 
-## About Smartmontools <a id="AboutSmartmontools"></a>
-![S.M.A.R.T.-Logo](assets/smart_logo.gif) 
-The smartmontools package contains two utility programs (`smartctl` and `smartd`) 
-to control and monitor storage systems using the ''Self-Monitoring, Analysis and 
-Reporting Technology System'' (SMART) built into most modern ATA/SATA, SCSI/SAS and NVMe disks. 
+The smartmontools package contains two utility programs (`smartctl` and `smartd`)
+to control and monitor storage systems using the *Self-Monitoring, Analysis and
+Reporting Technology System* (SMART) built into most modern ATA/SATA, SCSI/SAS and NVMe disks.
 In many cases, these utilities will provide advanced warning of disk degradation and failure.
  
 Smartmontools was originally derived from the Linux [smartsuite package](https://sourceforge.net/projects/smartsuite/) and actually supports ATA/SATA, [SCSI](https://github.com/smartmontools/smartmontools/blob/main/www/smartmontools_scsi.xml)/SAS and [NVMe](nvme-support.md) disks and also SCSI/SAS tape devices.
@@ -73,15 +57,13 @@ We collect info about [USB devices that have been successfully or unsuccessfully
 #### Bug Reports <a id="BugReports"></a>
 
 To submit a bug report or propose an enhancement, [create an issue](https://github.com/smartmontools/smartmontools/issues) at GitHub.
-Alternatively create a ticket here in trac.
 If you don't want to register an account, you can also send the info to our
 [smartmontools-support](https://listi.jpberlin.de/mailman/listinfo/smartmontools-support) mailing list.
 
 #### Patches <a id="Patches"></a>
 
 Patches are welcome!
-**The most convenient way for us is when you [create a pull request](https://github.com/smartmontools/smartmontools/pulls) at GitHub.**
-Alternatively attach the patch to a new ticket here in trac.
+[Create a pull request](https://github.com/smartmontools/smartmontools/pulls) at GitHub.
 
 #### GitHub PR-s and Issues <a id="GitHubPR-sandIssues"></a>
 
@@ -94,9 +76,9 @@ Additionally, a GitHub Action CI/CD (Continuous Integration and Deployment) syst
 
 #### Incident Reports <a id="IncidentReports"></a>
 
-If you see a failure or have a problem with [our project facilities](tocdeveloper.md#Facilities) you may [report it](mailto:smartmontools-devel@listi.jpberlin.de?subject=Incident) to 
+If you see a failure or have a problem with [our project facilities](tocdeveloper.md) you may [report it](mailto:smartmontools-devel@listi.jpberlin.de?subject=Incident) to 
 `smartmontools-devel@listi.jpberlin.de`. You don't need to be subscribed for that. Your mail will then go to the list moderator and she will take action to solve the issue. Project uptime is monitored on the [status page](https://status.smartmontools.org/) hosted by BetterStack service.
 
 #### License <a id="License"></a>
 
-Smartmontools (and content in this wiki) are published under [GNU GPL](https://www.gnu.org/licenses/gpl-2.0.html#SEC1). 
+Smartmontools is published under the [GNU GPL](https://www.gnu.org/licenses/gpl-2.0.html#SEC1).
