@@ -6,7 +6,7 @@ The report below is an example of `smartctl -a` output.  The sections that follo
 ---
 
 ## The report <a id="Thereport"></a>
-<pre>
+```
 # smartctl -q noserial -a  /dev/sdb
 smartctl 5.39 2009-09-04 r2902 [i686-pc-linux-gnu] (local build)
 Copyright (C) 2002-9 by Bruce Allen, http://smartmontools.sourceforge.net
@@ -110,7 +110,7 @@ SMART Selective self-test log data structure revision number 1
 Selective self-test flags (0x0):
   After scanning selected spans, do NOT read-scan remainder of disk.
 If Selective self-test is pending on power-up, resume after 0 minute delay.
-</pre>
+```
 
 <a id="SMART_Status"></a>
 

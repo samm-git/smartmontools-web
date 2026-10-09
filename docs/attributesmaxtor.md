@@ -15,12 +15,12 @@
 |  | 6 | Start/Stop Count |  | Number of start/stop cycles of spindle. |
 |  |  |  |  |  |
 |  | **7** | **Seek Error Rate** |  | Frequency of errors appearance while positioning. |
-|  |  |  | ![question.png](assets/question.png) | *I believe that the raw 48-bit Seek Error Rate attribute is encoded as follows:* **`topmost 16 bits=total number of seek errors, bottom 32 bits=total number of seeks`**. *Therefore the Seek Error Rate is equal to ...* **`(total number of seek errors) / (total number of seeks)`** [Reference](http://forums.seagate.com/stx/board/message?board.id=ata_drives&message.id=8732#M8732) |
+|  |  |  | ![question.png](img/question.png) | *I believe that the raw 48-bit Seek Error Rate attribute is encoded as follows:* **`topmost 16 bits=total number of seek errors, bottom 32 bits=total number of seeks`**. *Therefore the Seek Error Rate is equal to ...* **`(total number of seek errors) / (total number of seeks)`** [Reference](http://forums.seagate.com/stx/board/message?board.id=ata_drives&message.id=8732#M8732) |
 |  |  |  |  |  |
 |  | 8 | Seek Time Performance |  | The average efficiency of operations while positioning. |
 |  |  |  |  |  |
 |  | **9** | **Power-On Hours Count** |  | Quantity of elapsed hours in the switched-on state. |
-|  |  |  | ![exclamation.png](assets/exclamation.png) | *On recent disks, Maxtor has started to use Attribute 9 to store the power-on disk lifetime in minutes rather than hours. In this case, use the: `'-v 9,minutes'` option to correctly display hours and minutes.* |
+|  |  |  | ![exclamation.png](img/exclamation.png) | *On recent disks, Maxtor has started to use Attribute 9 to store the power-on disk lifetime in minutes rather than hours. In this case, use the: `'-v 9,minutes'` option to correctly display hours and minutes.* |
 |  |  |  |  |  |
 |  | 10 | Spin-up Retry Count |  | Number of retry attempts, that were needed to reach the operational speed of the spindle. |
 |  | 11 | Calibration Retry Count |  | Number of attempts to calibrate a drive. |
@@ -60,4 +60,4 @@
 
 **References:** http://www.ariolic.com/activesmart/smart-attributes/
 
-Images ![exclamation.png](assets/exclamation.png) and ![question.png](assets/question.png) were made by Melamed katz, based on Image from the Nuvola icon theme for KDE 3.x by David Vignoni. Source: http://commons.wikimedia.org/wiki/File:Question_exclamation.svg
+Images ![exclamation.png](img/exclamation.png) and ![question.png](img/question.png) were made by Melamed katz, based on Image from the Nuvola icon theme for KDE 3.x by David Vignoni. Source: http://commons.wikimedia.org/wiki/File:Question_exclamation.svg

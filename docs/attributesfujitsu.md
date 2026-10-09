@@ -16,7 +16,7 @@
 |  | 7 | Seek Error Rate |  | Frequency of errors appearance while positioning. |
 |  | 8 | Seek Time Performance |  | The average efficiency of operations while positioning. |
 |  | **9** | **Power-On Hours Count** |  | Quantity of elapsed hours in the switched-on state. |
-| which ![question.png](assets/question.png) |  |  | ![exclamation.png](assets/exclamation.png) | *Some models of Fujitsu disks use Attribute 9 to store the power-on disk lifetime in seconds. In that case, use the: {{'-v 9,seconds'}} option to correctly display hours, minutes and seconds.* |
+| which ![question.png](img/question.png) |  |  | ![exclamation.png](img/exclamation.png) | *Some models of Fujitsu disks use Attribute 9 to store the power-on disk lifetime in seconds. In that case, use the: {{'-v 9,seconds'}} option to correctly display hours, minutes and seconds.* |
 |  | 10 | Spin-up Retry Count |  | Number of retry attempts, that were needed to reach the operational speed of the spindle. |
 |  | 11 | Calibration Retry Count |  | Number of attempts to calibrate a drive. |
 |  | 12 | Power Cycle Count |  | Number of complete power on/off cycles of hard disk. |
@@ -38,7 +38,7 @@
 | *<unknown>* | 206 | Flying Height |  | The height of the disk heads above the disk surface. |
 | *<unknown>* | 207 | Spin High Current |  | Amount of high current used to spin up the drive. |
 | *<unknown>* | 208 | Spin Buzz |  | Number of buzz routines to spin up the drive. |
-| *<unknown>* | 209 | Offline Seek Performance |  | Drive's seek performance during offline operations. (Relation to Seek Time Performance - Attribute ID 8? ![question.png](assets/question.png)) |
+| *<unknown>* | 209 | Offline Seek Performance |  | Drive's seek performance during offline operations. (Relation to Seek Time Performance - Attribute ID 8? ![question.png](img/question.png)) |
 | *<unknown>* | 220 | Disk Shift |  | Shift of disk is possible as a result of strong shock loading in the store, as a result of it's falling or for other reasons (sometimes: Temperature) |
 | *<unknown>* | 221 | G-Sense Error Rate |  | Frequency of mistakes as a result of impact loads as detected by a shock sensor(?). |
 | *<unknown>* | 222 | Loaded Hours |  | Number of hours in general operational state. |
@@ -55,4 +55,4 @@
 
 **References:** http://www.ariolic.com/activesmart/smart-attributes/
 
-Images ![exclamation.png](assets/exclamation.png) and ![question.png](assets/question.png) were made by Melamed katz, based on Image from the Nuvola icon theme for KDE 3.x by David Vignoni. Source: http://commons.wikimedia.org/wiki/File:Question_exclamation.svg
+Images ![exclamation.png](img/exclamation.png) and ![question.png](img/question.png) were made by Melamed katz, based on Image from the Nuvola icon theme for KDE 3.x by David Vignoni. Source: http://commons.wikimedia.org/wiki/File:Question_exclamation.svg

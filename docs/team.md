@@ -1,7 +1,7 @@
 # The developers and supporters of smartmontools <a id="Thedevelopersandsupportersofsmartmontools"></a>
 
 
-![BruceAndCat_2008_04_22-sm.jpg](assets/BruceAndCat_2008_04_22-sm.jpg)
+![BruceAndCat_2008_04_22-sm.jpg](img/BruceAndCat_2008_04_22-sm.jpg)
 
 ### Bruce Allen (Initiator and Project Leader) <a id="BruceAllenInitiatorandProjectLeader"></a>
 I am a professor of physics at the U. of Wisconsin - Milwaukee, and a Director of the Albert Einstein
@@ -26,7 +26,7 @@ I also do some work on BOINC, and run the Einstein@Home distributed search for g
 
 ---
 
-![chrfranke.jpg](assets/chrfranke.jpg)
+![chrfranke.jpg](img/chrfranke.jpg)
 
 ### Christian Franke (Project Manager, Developer and Maintainer) <a id="ChristianFrankeProjectManagerDeveloperandMaintainer"></a>
 
@@ -53,7 +53,7 @@ contributions from Praveen Chidambaram, Douglas Gilbert and Frederic Boiteux.
 
 ---
 
-![gap-woody.jpg](assets/gap-woody.jpg)
+![gap-woody.jpg](img/gap-woody.jpg)
 
 ### Gabriele Pohl (Sysadmin and Team Assistant) <a id="GabrielePohlSysadminandTeamAssistant"></a>
 

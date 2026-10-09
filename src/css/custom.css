@@ -1,0 +1,28 @@
+:root {
+  --ifm-color-primary: #2f5bd0;
+  --ifm-color-primary-dark: #2a52bb;
+  --ifm-color-primary-darker: #284db1;
+  --ifm-color-primary-darkest: #214092;
+  --ifm-color-primary-light: #4570d6;
+  --ifm-color-primary-lighter: #5179d8;
+  --ifm-color-primary-lightest: #7291df;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #7fa8ff;
+  --ifm-color-primary-dark: #5c8dff;
+  --ifm-color-primary-darker: #4a80ff;
+  --ifm-color-primary-darkest: #1a56ff;
+  --ifm-color-primary-light: #a2c0ff;
+  --ifm-color-primary-lighter: #b4ccff;
+  --ifm-color-primary-lightest: #e8efff;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Keep the migrated preformatted reports readable. */
+article pre {
+  white-space: pre;
+  overflow-x: auto;
+}

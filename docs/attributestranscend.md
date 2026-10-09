@@ -20,4 +20,4 @@ Models: TS(8|16|32|64|128|192)GSSD25S-(M|S)
 
 **References:** [SSD25S Datasheet](http://www.transcendusa.com/Support/DLCenter/dllogin.asp?Link=dlcenter|Datasheet|SSD25S-JMI+Datasheet+v2.5.pdf)
 
-Images ![exclamation.png](assets/exclamation.png) and ![question.png](assets/question.png) were made by Melamed katz, based on Image from the Nuvola icon theme for KDE 3.x by David Vignoni. Source: http://commons.wikimedia.org/wiki/File:Question_exclamation.svg
+Images ![exclamation.png](img/exclamation.png) and ![question.png](img/question.png) were made by Melamed katz, based on Image from the Nuvola icon theme for KDE 3.x by David Vignoni. Source: http://commons.wikimedia.org/wiki/File:Question_exclamation.svg

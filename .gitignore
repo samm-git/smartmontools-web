@@ -1,6 +1,10 @@
-# Build artifacts
-site/
-.cache/
+# Dependencies
+node_modules/
+
+# Docusaurus build artifacts
+build/
+.docusaurus/
+.cache-loader/
 
 # Generated man pages (recreated by the Pages workflow)
 docs/man/smartctl.md

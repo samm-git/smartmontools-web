@@ -6,7 +6,7 @@ The report below is an example of `smartctl -a` output.  The sections that follo
 ---
 
 ## The report <a id="Thereport"></a>
-<pre>
+```
 # smartctl -q noserial -a /dev/ada30
 smartctl 5.42 2011-10-20 r3458 [FreeBSD 9.0-RELEASE-p4 amd64] (local build)
 Copyright (C) 2002-11 by Bruce Allen, http://smartmontools.sourceforge.net
@@ -95,7 +95,7 @@ ATA Error Count: 5
 	ST = Status register [HEX]
 Powered_Up_Time is measured from power on, and printed as
 DDd+hh:mm:SS.sss where DD=days, hh=hours, mm=minutes,
-SS=sec, and sss=millisec. It &quot;wraps&quot; after 49.710 days.
+SS=sec, and sss=millisec. It "wraps" after 49.710 days.
 
 Error 5 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   When the command that caused the error occurred, the device was active or idle.
@@ -196,7 +196,7 @@ SMART Selective self-test log data structure revision number 1
 Selective self-test flags (0x0):
   After scanning selected spans, do NOT read-scan remainder of disk.
 If Selective self-test is pending on power-up, resume after 0 minute delay.
-</pre>
+```
 
 <a id="SMART_Status"></a>
 

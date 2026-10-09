@@ -778,6 +778,6 @@ It was non-standard.  So with the move to GNU Autoconf and GNU Automake it chang
 
 ### How to create a bug report <a id="Howtocreateabugreport"></a>
 
-See [wiki start page](index.md).
+See [wiki start page](/).
 
 ---
