@@ -10,7 +10,7 @@ Move the mouse to the coloured parts of the text below to see a short explanatio
 <b># smartctl <a href="https://github.com/smartmontools/smartmontools/blob/main/smartmontools/smartctl.8.in#lbAG" title="With this option, the report will not list the /Serial Number/ of the device. Use it, when you present smartctl reports in the public."><font color="blue">-q noserial</font></a> -a /dev/ada30</b>
 smartctl <b><a href="faq.md#Whydidthereleaseversionschemechange" title="This is the /Version Number/ of smartmontools"><font color="red">5.42</font></a></b> 2011-10-20 <b><a href="https://github.com/smartmontools/smartmontools/blob/3458/smartmontools" title="This is the /Revision Number/ of the sources in our SVN-Repository. So we know the exact version of each file, that was used to build your smartctl executable."><font color="red">r3458</font></a></b> [FreeBSD 9.0-RELEASE-p4 amd64] (local build)
 Copyright (C) 2002-11 by Bruce Allen, http://smartmontools.sourceforge.net
-
+ 
 === START OF INFORMATION SECTION ===
 Model Family:     Hitachi Deskstar 5K3000
 Device Model:     Hitachi HDS5C3030ALA630
@@ -24,10 +24,10 @@ ATA Standard is:  ATA-8-ACS revision 4
 Local Time is:    Fri Aug 31 13:37:32 2012 PDT
 SMART support is: Available - device has SMART capability.
 SMART support is: Enabled
-
+ 
 === START OF READ SMART DATA SECTION ===
 SMART overall-health self-assessment test result: <b><a href="#SMART_Status" title="The SMART /overall-health state/. If you see /PASSED/, then the device stood the proof and is OK so far. If you see state /FAILED/, then one ore more attributes signaled a failure. You should try to get a backup and replace the drive instantly (!)"><font color="DarkGreen">PASSED</font></a></b>
-
+ 
 General SMART Values:
 Offline data collection status:  (0x84)	Offline data collection activity
 					was suspended by an interrupting command from host.
@@ -59,7 +59,7 @@ SCT capabilities: 	       (0x003d)	SCT Status supported.
 					SCT Error Recovery Control supported.
 					SCT Feature Control supported.
 					SCT Data Table supported.
-
+ 
 SMART Attributes Data Structure revision number: 16
 Vendor Specific SMART Attributes with Thresholds:
 ID# <b><a href="tocdoc.md#SMARTAttributes" title="If your drive is not in the database, the names of the Attributes may be incorrect. Also note that starting with ATA/ATAPI-4, revision 4, the meaning of these Attribute fields have been made /entirely vendor-specific/. We collect info about the SMART attributes in separate wiki pages for the different vendors. Click the link to get there and choose the appropriate one."><font color="blue">ATTRIBUTE_NAME<font></a></b>          FLAG     <b><a href="tocdoc.md#SMARTAttributes" title="These are /NORMALIZED/ attribute values in the range 1-254. They are calculated by the vendors firmware using his detailed knowledge of the disk's operations and failure mode. Smartmontools only /report/ these."><font color="blue">VALUE<font></a></b> <b><a href="#Worst" title="This is the smallest (/closest to failure/) value that the disk has recorded at any time during its lifetime when SMART was enabled."><font color="browne">WORST</font></a></b> <b><a href="#Thresh" title="Each Attribute also has a Threshold value (whose range is 0 to 255). If the Normalized value (printed in column VALUE) is less than or equal to the Threshold value, then the Attribute is said to have failed. If the Attribute is a pre-failure Attribute, then disk failure is imminent."><font color="red">THRESH</font></a></b> <b><a href="#Attribute_Type" title="Attributes are one of two possible types: /Pre-fail/ or /Old_age/. Pre-failure Attributes are ones which, if less than or equal to their threshold values, indicate pending disk failure. Old age, or usage Attributes, are ones which indicate end-of-product life from old-age or normal aging and wearout, if the Attribute value is less than or equal to the threshold."><font color="DarkGreen">TYPE</font></a></b>      <b><a href="#When_Udated" title="Info in column /UPDATED/ shows if the SMART Attribute values are updated during both normal operation and off-line testing, or only during offline testing. The former are labeled /Always/ and the latter are labeled /Offline/"><font color="DarkGreen">UPDATED</font></a></b>  <b><a href="#When_Failed" title="If the Attribute's current /Normalized value/ is less than or equal to the threshold value, then the /WHEN_FAILED/ column will display /FAILING_NOW/. If not, but the worst recorded value is less than or equal to the threshold value, then this column will display /In_the_past/. If the /WHEN_FAILED/ column has no entry (indicated by a dash: '-') then this Attribute is OK now (not failing) and has also never failed in the past."><font color="red">WHEN_FAILED</font></a></b> <b><a href="#Raw_Value" title="Each Attribute has a /Raw/ value. [Note: smartctl prints these values in base-10.] Vendors use their own algorithms to convert this to a /Normalized/ value in the range from 1 to 254. (See column /Value/"><font color="blue">RAW_VALUE</font></a></b>
@@ -80,7 +80,7 @@ ID# <b><a href="tocdoc.md#SMARTAttributes" title="If your drive is not in the da
 197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       2
 198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
 199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       0
-
+ 
 SMART Error Log Version: 1
 ATA Error Count: 5
 	CR = Command Register [HEX]
@@ -96,15 +96,15 @@ ATA Error Count: 5
 Powered_Up_Time is measured from power on, and printed as
 DDd+hh:mm:SS.sss where DD=days, hh=hours, mm=minutes,
 SS=sec, and sss=millisec. It "wraps" after 49.710 days.
-
+ 
 Error 5 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   When the command that caused the error occurred, the device was active or idle.
-
+ 
   After command completion occurred, registers were:
   ER ST SC SN CL CH DH
   -- -- -- -- -- -- --
   40 51 52 9b d9 3f 05  Error: <b><a href="#UNC" title="UNC (UNCorrectable): data is uncorrectable. This refers to data which has been read from the disk, but for which the Error Checking and Correction (ECC) codes are inconsistent. In effect, this means that the data can not be read."><font color="red">UNC<font></a></b> at <b><a href="#LBA" title="Logical Block Address (LBA) at which the error occurred printed in base 16 and base 10."><font color="blue">LBA</font></a></b>) = 0x053fd99b = 88070555
-
+ 
   Commands leading to the command that caused the error were:
   CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
   -- -- -- -- -- -- -- --  ----------------  --------------------
@@ -113,15 +113,15 @@ Error 5 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   60 02 e8 ec 0a 9e 40 00      23:30:45.474  READ FPDMA QUEUED
   60 a0 f0 4d d9 3f 40 00      23:30:45.474  READ FPDMA QUEUED
   2f 00 01 10 00 00 00 00      23:30:45.474  READ LOG EXT
-
+ 
 Error 4 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   When the command that caused the error occurred, the device was active or idle.
-
+ 
   After command completion occurred, registers were:
   ER ST SC SN CL CH DH
   -- -- -- -- -- -- --
   40 51 52 9b d9 3f 05  Error: UNC at LBA = 0x053fd99b = 88070555
-
+ 
   Commands leading to the command that caused the error were:
   CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
   -- -- -- -- -- -- -- --  ----------------  --------------------
@@ -130,15 +130,15 @@ Error 4 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   60 02 e8 ec 0a 9e 40 00      23:30:41.562  READ FPDMA QUEUED
   60 a0 f0 4d d9 3f 40 00      23:30:41.562  READ FPDMA QUEUED
   2f 00 01 10 00 00 00 00      23:30:41.562  READ LOG EXT
-
+ 
 Error 3 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   When the command that caused the error occurred, the device was active or idle.
-
+ 
   After command completion occurred, registers were:
   ER ST SC SN CL CH DH
   -- -- -- -- -- -- --
   40 51 52 9b d9 3f 05  Error: UNC at LBA = 0x053fd99b = 88070555
-
+ 
   Commands leading to the command that caused the error were:
   CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
   -- -- -- -- -- -- -- --  ----------------  --------------------
@@ -147,15 +147,15 @@ Error 3 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   60 02 e8 ec 0a 9e 40 00      23:30:37.639  READ FPDMA QUEUED
   60 a0 f0 4d d9 3f 40 00      23:30:37.639  READ FPDMA QUEUED
   2f 00 01 10 00 00 00 00      23:30:37.639  READ LOG EXT
-
+ 
 Error 2 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   When the command that caused the error occurred, the device was active or idle.
-
+ 
   After command completion occurred, registers were:
   ER ST SC SN CL CH DH
   -- -- -- -- -- -- --
   40 51 52 9b d9 3f 05  Error: UNC at LBA = 0x053fd99b = 88070555
-
+ 
   Commands leading to the command that caused the error were:
   CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
   -- -- -- -- -- -- -- --  ----------------  --------------------
@@ -164,15 +164,15 @@ Error 2 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   60 02 e8 ec 0a 9e 40 00      23:30:33.740  READ FPDMA QUEUED
   60 a0 f0 4d d9 3f 40 00      23:30:33.740  READ FPDMA QUEUED
   2f 00 01 10 00 00 00 00      23:30:33.727  READ LOG EXT
-
+ 
 Error 1 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   When the command that caused the error occurred, the device was active or idle.
-
+ 
   After command completion occurred, registers were:
   ER ST SC SN CL CH DH
   -- -- -- -- -- -- --
   40 51 52 9b d9 3f 05  Error: UNC at LBA = 0x053fd99b = 88070555
-
+ 
   Commands leading to the command that caused the error were:
   CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
   -- -- -- -- -- -- -- --  ----------------  --------------------
@@ -181,11 +181,11 @@ Error 1 occurred at disk power-on lifetime: 5353 hours (223 days + 1 hours)
   60 02 e8 ec 0a 9e 40 00      23:30:29.836  READ FPDMA QUEUED
   60 a0 a0 4d d9 3f 40 00      23:30:29.836  READ FPDMA QUEUED
   60 20 a8 2d d9 3f 40 00      23:30:29.833  READ FPDMA QUEUED
-
+ 
 SMART Self-test log structure revision number 1
 Num  Test_Description    Status                  Remaining  LifeTime(hours) <b><a href="badblockhowto.md" title="If you find not a hyphen, but a number in this row, then the test found a /bad block/ at the listed logical block address (LBA). Follow this link to read our /Bad block HOWTO/. It gives instructions to solve this sort of problem."><font color="red">LBA_of_first_error</font></a></b>
-# 1  Short offline       Completed without error       00%      7465         - <a id="1ShortofflineCompletedwithouterror007465-"></a>
-
+# 1  Short offline       Completed without error       00%      7465         -
+ 
 SMART Selective self-test log data structure revision number 1
  SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
     1        0        0  Not_testing
@@ -196,7 +196,7 @@ SMART Selective self-test log data structure revision number 1
 Selective self-test flags (0x0):
   After scanning selected spans, do NOT read-scan remainder of disk.
 If Selective self-test is pending on power-up, resume after 0 minute delay.
-
+ 
 <hr />
 </pre>
 <a name="SMART_Status"></a><h4>SMART overall-health state</h4>
