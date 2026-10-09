@@ -1,14 +1,16 @@
+<div class="hero" markdown>
+
 # smartmontools
 
-The **smartmontools** package contains two utility programs, `smartctl` and
-`smartd`, to control and monitor storage systems using the *Self-Monitoring,
-Analysis and Reporting Technology System* (SMART) built into most modern
-ATA/SATA, SCSI/SAS and NVMe disks.  In many cases these utilities provide
+Control and monitor storage systems using **S.M.A.R.T.** — for ATA/SATA,
+SCSI/SAS and NVMe disks.  The two utilities `smartctl` and `smartd` give you
 advanced warning of disk degradation and failure.
 
-[Download smartmontools](download.md){ .md-button .md-button--primary }
+[Download](download.md){ .md-button .md-button--primary }
 [Documentation](tocdoc.md){ .md-button }
-[GitHub repository](https://github.com/smartmontools/smartmontools){ .md-button }
+[GitHub](https://github.com/smartmontools/smartmontools){ .md-button }
+
+</div>
 
 <div class="grid cards" markdown>
 
@@ -16,8 +18,8 @@ advanced warning of disk degradation and failure.
 
     ---
 
-    Source tarballs, binaries and packages for Linux, FreeBSD, NetBSD,
-    OpenBSD, macOS, Solaris and Windows.
+    Source tarballs, binaries and packages for Linux, FreeBSD, NetBSD, OpenBSD,
+    macOS, Solaris and Windows.
 
     [Download & install](download.md)
 
@@ -25,8 +27,8 @@ advanced warning of disk degradation and failure.
 
     ---
 
-    Installation notes, the FAQ and the on-line manual pages for
-    `smartctl`, `smartd` and `smartd.conf`.
+    FAQ, installation notes and the on-line manual pages for `smartctl`,
+    `smartd` and `smartd.conf`.
 
     [Read the documentation](tocdoc.md)
 
@@ -34,8 +36,8 @@ advanced warning of disk degradation and failure.
 
     ---
 
-    Which USB bridges, RAID controllers and NVMe devices are supported,
-    and how to read `smartctl` reports.
+    Supported USB bridges, RAID controllers and NVMe devices, plus how to read
+    `smartctl` reports.
 
     [Device support](tocsupport.md)
 
@@ -43,8 +45,8 @@ advanced warning of disk degradation and failure.
 
     ---
 
-    Frequently asked questions, mailing lists and how to report a problem
-    on GitHub.
+    Frequently asked questions, mailing lists and how to report a problem on
+    GitHub.
 
     [Help & support](help.md)
 
@@ -60,20 +62,6 @@ advanced warning of disk degradation and failure.
   [NVMe](nvme-support.md)
 - [Recommended links](links.md)
 
-## Latest release
-
-**smartmontools 7.5** was released on 2025-04-30.  See the
-[NEWS](https://github.com/smartmontools/smartmontools/blob/main/NEWS) file and
-the [release notes](https://github.com/smartmontools/smartmontools/releases)
-for details.
-
-## Project
-
-- [News](news.md) · [History](history.md) · [Team](team.md)
-- [Development](tocdeveloper.md) · [Coding style](codingstyle.md)
-- [Report an issue](https://github.com/smartmontools/smartmontools/issues)
-
----
-
-*Smartmontools is published under the
-[GNU General Public License](https://www.gnu.org/licenses/gpl-2.0.html).*
+**Latest release:** smartmontools **7.5** (2025-04-30) — see the
+[NEWS](https://github.com/smartmontools/smartmontools/blob/main/NEWS) and
+[releases](https://github.com/smartmontools/smartmontools/releases).
