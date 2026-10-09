@@ -52,6 +52,42 @@ advanced warning of disk degradation and failure.
 
 </div>
 
+## About smartmontools
+
+![S.M.A.R.T. logo](assets/smart_logo.gif)
+
+Smartmontools was originally derived from the Linux
+[smartsuite package](https://sourceforge.net/projects/smartsuite/) and supports
+ATA/SATA, [SCSI](https://github.com/smartmontools/smartmontools/blob/main/www/smartmontools_scsi.xml)/SAS
+and [NVMe](nvme-support.md) disks as well as SCSI/SAS tape devices.  It runs on
+Linux, FreeBSD, NetBSD, OpenBSD, Darwin (macOS), Solaris, Windows, Cygwin, OS/2,
+eComStation and QNX, and can also be run from one of many
+[Live CDs/DVDs](livecds.md).
+
+Precompiled packages are available from the repositories of many distributions —
+see the [Packages](packages.md) page or
+[Repology.org](https://repology.org/project/smartmontools/versions).  Thanks to
+[Alexander Shaduri](https://gsmartcontrol.sourceforge.io/) there is also
+[GSmartControl](https://gsmartcontrol.sourceforge.io/), a graphical user
+interface for `smartctl`.
+
+Smartmontools is published under the
+[GNU General Public License](https://www.gnu.org/licenses/gpl-2.0.html).
+
+## Contribute
+
+- **Device information** — if your drive is not in the
+  [drive database](https://github.com/smartmontools/smartmontools/blob/main/src/drivedb.h),
+  help add it; see the [FAQ](faq.md).  We also collect
+  [USB device test results](supported-usb-devices.md).
+- **Bug reports** — [create an issue](https://github.com/smartmontools/smartmontools/issues)
+  on GitHub, or send the details to the
+  [smartmontools-support](https://listi.jpberlin.de/mailman/listinfo/smartmontools-support)
+  mailing list.
+- **Patches** — the preferred way is to
+  [open a pull request](https://github.com/smartmontools/smartmontools/pulls) on GitHub.
+- **Development** — see the [developer information](tocdeveloper.md).
+
 ## Quick links
 
 - [Frequently asked questions (FAQ)](faq.md)
