@@ -1,0 +1,83 @@
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site sources
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Zensical
+        run: pip install --upgrade -r requirements.txt
+
+      - name: Checkout smartmontools (man pages)
+        uses: actions/checkout@v4
+        with:
+          repository: smartmontools/smartmontools
+          ref: main
+          path: upstream
+          fetch-depth: 0
+
+      - name: Generate man pages
+        run: |
+          set -euo pipefail
+          command -v pandoc >/dev/null || (sudo apt-get update && sudo apt-get install -y pandoc)
+
+          cd upstream
+          eval "$(sh util/getversion.sh -s)" || true
+          cd ..
+          export SMARTMONTOOLS_GIT_REV="${SMARTMONTOOLS_GIT_REV:-unknown}"
+          export SMARTMONTOOLS_GIT_REV_DATE="${SMARTMONTOOLS_GIT_REV_DATE:-}"
+          export SMARTMONTOOLS_GIT_VER_DESC="${SMARTMONTOOLS_GIT_VER_DESC:-}"
+
+          mkdir -p docs/man
+          gen() {
+            local src="upstream/src/$1.in" out="docs/man/$2.md"
+            sed -e "s|@SMARTMONTOOLS_GIT_REV@|${SMARTMONTOOLS_GIT_REV}|g" \
+                -e "s|@SMARTMONTOOLS_GIT_REV_DATE@|${SMARTMONTOOLS_GIT_REV_DATE}|g" \
+                -e "s|@SMARTMONTOOLS_GIT_VER_DESC@|${SMARTMONTOOLS_GIT_VER_DESC}|g" \
+                "$src" > "/tmp/$2.man"
+            { echo "# ${3}"; echo; pandoc -f man -t gfm --wrap=none "/tmp/$2.man"; } > "$out"
+          }
+          gen smartctl.8 smartctl "smartctl(8)"
+          gen smartd.8 smartd "smartd(8)"
+          gen smartd.conf.5 smartd.conf "smartd.conf(5)"
+          gen update-smart-drivedb.8 update-smart-drivedb "update-smart-drivedb(8)"
+
+      - name: Build site
+        run: zensical build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

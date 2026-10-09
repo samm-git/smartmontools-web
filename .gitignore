@@ -1,0 +1,9 @@
+# Build artifacts
+site/
+.cache/
+
+# Generated man pages (recreated by the Pages workflow)
+docs/man/smartctl.md
+docs/man/smartd.md
+docs/man/smartd.conf.md
+docs/man/update-smart-drivedb.md

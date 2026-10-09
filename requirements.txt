@@ -1,0 +1,3 @@
+# Zensical is the successor to Material for MkDocs (built by the same team).
+# It reads this project's mkdocs.yml directly.
+zensical>=0.0.57

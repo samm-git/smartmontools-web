@@ -1,0 +1,142 @@
+site_name: smartmontools
+site_url: https://samm-git.github.io/smartmontools-web/
+site_description: >-
+  Tools to control and monitor storage systems using S.M.A.R.T.
+repo_url: https://github.com/smartmontools/smartmontools
+repo_name: smartmontools/smartmontools
+edit_uri: ""
+copyright: smartmontools is published under the GNU GPL.
+
+theme:
+  name: material
+  variant: classic
+  language: en
+  logo: assets/smart_logo.gif
+  favicon: assets/smart_logo.gif
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Download: download.md
+  - Documentation:
+      - Overview: tocdoc.md
+      - Frequently Asked Questions: faq.md
+      - Help & Support: help.md
+      - Bad block HOWTO: badblockhowto.md
+      - Reading smartctl reports:
+          - ATA (annotated): howto-readsmartctlreports-ata.md
+          - ATA (new): howto-readsmartctlreports-ata-new.md
+          - ATA (5.42.1): howto-readsmartctlreports-ata-542-1.md
+      - SATA/USB and UAS: sat-with-uas-linux.md
+      - Links: links.md
+  - Man pages:
+      - man/index.md
+      - smartctl: man/smartctl.md
+      - smartd: man/smartd.md
+      - smartd.conf: man/smartd.conf.md
+      - update-smart-drivedb: man/update-smart-drivedb.md
+  - Device support:
+      - Overview: tocsupport.md
+      - USB devices and smartmontools: usb.md
+      - NVMe support: nvme-support.md
+      - RAID controllers: supported-raid-controllers.md
+      - USB device table: supported-usb-devices.md
+      - USB device table (0x1000+): supported-usb-devices-idvendor-0x1000.md
+      - Unsupported USB devices: unsupported-usb-devices.md
+      - USB 0x1058:0701: usb-0x1058-0701.md
+      - USB 0x1058:0702: usb-0x1058-0702.md
+      - Attributes:
+          - Fujitsu: attributesfujitsu.md
+          - IBM: attributesibm.md
+          - Maxtor: attributesmaxtor.md
+          - Seagate: attributesseagate.md
+          - Transcend: attributestranscend.md
+          - Western Digital: attributeswestern-digital.md
+          - Vendor docs: attributes-vendordocs.md
+      - Examples:
+          - A-DATA SH93: a-data-sh93.md
+          - EG0146FAWHU: examples-eg0146fawhu.md
+          - HTS547550A9E384: examples-hts547550a9e384.md
+          - HUS154545VLS300: examples-hus154545vls300.md
+          - SSDSC2BB120G4: examples-ssdsc2bb120g4.md
+          - THNSNJ256GVNU: examples-thnsnj256gvnu.md
+      - Miscellaneous:
+          - attributelog: attributelog.md
+          - raw values: raw-values.md
+          - self-test: selftest-short.md
+          - Power mode: powermode.md
+          - Samsung F4EG bad blocks: samsungf4egbadblocks.md
+          - NAS: nas.md
+  - Development:
+      - Overview: tocdeveloper.md
+      - Developer guide: developerguide.md
+      - Coding style: codingstyle.md
+      - Release policy: releasepolicy.md
+      - History: history.md
+      - Team: team.md
+      - Contributed utilities: contributedutilities.md
+      - Server architecture: serverarch.md
+      - Server TODO: servertodo.md
+      - How to migrate (old): developerhowtomigrate.md
+      - Ports:
+          - Darwin/macOS: developer-portdarwin.md
+          - FreeBSD: developer-portfreebsd.md
+          - Linux: developer-portlinux.md
+          - NetBSD: developer-portnetbsd.md
+          - OpenBSD: developer-portopenbsd.md
+          - QNX: developer-portqnx.md
+          - Solaris: developer-portsolaris.md
+          - Windows: developer-portwindows.md
+          - cciss: developer-cciss.md
+      - Vacancies:
+          - Database: vacancies-database.md
+          - OpenBSD maintainer: vacancies-maintainer4openbsd.md
+  - Packages: packages.md
+  - Live CDs: livecds.md
+  - Packager's wishlist: packagerswishlist.md
+  - News: news.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/smartmontools
